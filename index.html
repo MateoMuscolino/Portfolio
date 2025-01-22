@@ -21,13 +21,53 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Full-Stack Developer</p>
-                <h1>Hi, I'm Mateo from Argentina</h1>
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Mateo</span> from Argentina</h1>
             </div>
         </div>
     </div>
 
+    <!------------------------------ABOUT-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="css/img/perfil.JPEG" alt="Profile Picture"> <!-- Add your profile picture -->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Info about me</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI-UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web-Development</span><br>Web Developer</li>
+                            <li><span>App-Development</span><br>Android/IOS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI-UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web-Development</span><br>Web Developer</li>
+                            <li><span>App-Development</span><br>Android/IOS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>University Technique in Programming - Universidad Tecnológica Naciona(UTN)</span><br>Languages used: Python and C# / Databases: SQL and MongoDB</li>
+                            <li><span>Testing QA Manual - CoderHouse</span><br>Responsible for testing software applications to ensure they work as intended and meet specified requirements</li>
+                            <li><span>Python - CoderHouse</span><br>specific course where my relationship with language improves</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <script src="js/script.js"></script>
 </body>
 </html>
