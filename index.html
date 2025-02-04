@@ -40,7 +40,9 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Info about measfdafdaffs</p>
+                    <p>Hey there! I’m Mateo Muscolino, a 21-year-old student with a big dream: becoming a web developer. <br>I’ve always been curious about how websites work, and I love the idea of building something that people can use and enjoy. Right now, I’m learning everything I can about coding, from the basics to more advanced stuff, and I’m having a blast figuring out how to solve problems and make things look great on the screen.
+                        I’m really into creating websites that are not only functional but also look clean and modern. <br> I’m still learning, but I’m excited about the progress I’ve made so far, and I can’t wait to keep improving. <br>When I’m not studying or coding, I like to explore new tech trends, work on personal projects, or just brainstorm ideas for my next big thing.
+                        I’m all about growth and creativity, and I’m looking forward to connecting with others who share the same passion.
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
                         <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
@@ -80,19 +82,19 @@
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Desing</h2>
                     <p>asdadsadsdasddasd</p>
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/MateoMuscolino" target="_blank">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-mobile"></i>
                     <h2>App Developer</h2>
-                    <p>asdadsadsdasddasd</p>
-                    <a href="#">Learn more</a>
+                    <p>I’m currently learning how to design and develop apps that are not only functional but also intuitive and user-friendly</p>
+                    <a href="https://github.com/MateoMuscolino" target="_blank">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-mug-saucer"></i>
-                    <h2>Barista</h2>
-                    <p>asdadsadsdasddasd</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa-solid fa-camera"></i>
+                    <h2>Photographer</h2>
+                    <p>Photography has taught me to pay attention to the small details and think creatively—skills that I bring into my development work</p>
+                    <a href="https://www.instagram.com/mateomuscolino/" target="_blank">Learn more</a>
                 </div>
             </div>
         </div>
@@ -107,7 +109,7 @@
                     <div class="layer">
                         <h3>Quiz</h3>
                         <p>Quiz App. Were we can add multiple questions and four answers for each one.</p>
-                        <a href="#"><i class="fa-solid fa-link fa-sm" style="color: #6ea0be;"></i></a>
+                        <a href="https://github.com/MateoMuscolino/Quiz" target="_blank"><i class="fa-solid fa-link fa-sm" style="color: #6ea0be;"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -115,7 +117,7 @@
                     <div class="layer">
                         <h3>Calculator</h3>
                         <p>Calculator using html and css</p>
-                        <a href="#"><i class="fa-solid fa-link fa-sm" style="color: #6ea0be;"></i></a>
+                        <a href="https://github.com/MateoMuscolino/Calculator" target="_blank"><i class="fa-solid fa-link fa-sm" style="color: #6ea0be;"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -123,11 +125,11 @@
                     <div class="layer">
                         <h3>To-Do-List</h3>
                         <p>To-Do list website where you can add, delete, mark as completed and incomplete each of your tasks.</p>
-                        <a href="#"><i class="fa-solid fa-link fa-sm" style="color: #6ea0be;"></i></a>
+                        <a href="https://github.com/MateoMuscolino/To_Do_List" target="_blank"><i class="fa-solid fa-link fa-sm" style="color: #6ea0be;"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class = "btn">See more</a>
+            <a href="https://github.com/MateoMuscolino" target="_blank" class = "btn">See more</a>
         </div>
     </div>
         <!-------------contact------------->
@@ -151,6 +153,7 @@
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
@@ -159,16 +162,5 @@
             </div>
         </div>
     <script src="js/script.js"></script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxpEzHxca1W14qux8z7Coh1KPLlR5cx8-TGYeo7VwTU5Pr1Lb86MLJb1oNNYR0gzp8C/exec'
-        const form = document.forms['submit-to-google-sheet']
-    
-        form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>
 </body>
 </html>
