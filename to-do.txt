@@ -1,2 +1,2 @@
 Search a new logo
-fix the text on my portfolio section
+Make the about me text look better
