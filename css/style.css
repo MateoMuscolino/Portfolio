@@ -12,6 +12,19 @@ html{
 body {
     background: #080808;
     color: #777;
+    line-height: 1.6;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 i{
@@ -24,6 +37,64 @@ i{
     /*background-image: url(img/fondo.webp); /* buscar alguna imagen */
     background-size: cover;
     background-attachment: fixed;
+    
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 15%;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.header-text p {
+    font-size: 1.2rem;
+    color: #6ea0be;
+    margin-bottom: 1rem;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.header-text h1 span {
+    color: #6ea0be;
+}
+
+.header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image img {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .container {
@@ -364,6 +435,16 @@ form .btn2{
     cursor: pointer;
 }
 
+form input:focus, form textarea:focus {
+    border: 2px solid #6ea0be;
+}
+
+.btn:hover, .btn2:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
 .copyright{
     width: 100%;
     text-align: center;
@@ -384,10 +465,32 @@ nav .fa-solid{
         font-size: 16px;
     }
 
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
     .header-text h1{
         font-size: 30px;
     }
+
+    .header-text p {
+        font-size: 16px;
+    }
+
+    .header-image img {
+        max-width: 80%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
     
+    .about-col-1, .about-col-2, .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+
     nav .fa-solid{
         display: block;
         font-size: 25px;
