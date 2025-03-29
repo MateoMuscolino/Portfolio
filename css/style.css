@@ -109,9 +109,9 @@ nav{
 }
 
 .logo-text {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .logo-text a {
@@ -621,7 +621,7 @@ nav .fa-solid{
     }
 
     .logo-text {
-        font-size: 24px;
+        font-size: 18px;
     }
 }
 
@@ -665,7 +665,7 @@ nav .fa-solid{
     }
 
     .logo-text {
-        font-size: 22px;
+        font-size: 16px;
     }
 }
 
